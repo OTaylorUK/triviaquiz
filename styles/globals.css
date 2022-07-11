@@ -1,3 +1,37 @@
+:root {
+	@apply dark;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* only way to add variables without hard coding it */
+.light{
+	--custom-primary: var(--theme-light-primary);
+	--custom-secondary: var(--theme-light-secondary);
+	--custom-tertiary: var(--theme-light-tertiary);
+	--custom-white: var(--theme-light-white);
+	--custom-faded-dark: var(--theme-light-faded-dark);
+	--custom-faded-light: var(--theme-light-faded-light);
+	--custom-accent-primary: var(--theme-light-accent-primary);
+	--custom-accent-secondary: var(--theme-light-accent-secondary);
+}
+
+.dark{
+	--custom-primary: var(--theme-dark-primary);
+	--custom-secondary: var(--theme-dark-secondary);
+	--custom-tertiary: var(--theme-dark-tertiary);
+	--custom-white: var(--theme-dark-white);
+	--custom-faded-dark: var(--theme-dark-faded-dark);
+	--custom-faded-light: var(--theme-dark-faded-light);
+	--custom-accent-primary: var(--theme-dark-accent-primary);
+	--custom-accent-secondary: var(--theme-dark-accent-secondary);
+}
+
+
 html,
 body {
   padding: 0;
@@ -14,3 +48,293 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+
+
+@layer base {
+
+	html, body{
+		@apply bg-custom-white;
+	}
+
+	/* Typography */
+
+	/* hind-siliguri-300 - latin */
+  @font-face {
+    font-family: 'Hind Siliguri';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+        url('/fonts/hind-siliguri-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('/fonts/hind-siliguri-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* hind-siliguri-regular - latin */
+  @font-face {
+    font-family: 'Hind Siliguri';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('/fonts/hind-siliguri-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('/fonts/hind-siliguri-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* hind-siliguri-500 - latin */
+  @font-face {
+    font-family: 'Hind Siliguri';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('/fonts/hind-siliguri-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('/fonts/hind-siliguri-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* hind-siliguri-600 - latin */
+  @font-face {
+    font-family: 'Hind Siliguri';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+        url('/fonts/hind-siliguri-v12-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('/fonts/hind-siliguri-v12-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* hind-siliguri-700 - latin */
+  @font-face {
+    font-family: 'Hind Siliguri';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('/fonts/hind-siliguri-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('/fonts/hind-siliguri-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+	
+	::selection {
+		@apply text-custom-white bg-custom-accent-secondary
+	}
+
+
+	.hover-class{
+		@apply  -z-10 opacity-20 absolute -bottom-[10%] left-0 h-[10%] w-full bg-gradient-to-br  from-custom-accent-primary to-custom-white  transition-transform  duration-300  scale-x-[0%] origin-left;
+	}
+
+	.hover-class-active{
+		@apply  transition-transform duration-500 scale-x-100 opacity-90 ;
+	}
+
+	.link-inside-text{
+		@apply  relative  text-inherit whitespace-nowrap overflow-x-hidden;
+		font-family: inherit;
+		font-size: inherit;
+		font-weight: inherit;
+	}
+
+	.large-text{
+		 @apply text-lg leading-relaxed
+	}
+
+
+	h1,h2,h3,h4,h5,h6{
+		@apply font-sans  font-bold
+	}
+
+
+	h1 a{
+		@apply  link-inside-text;
+	}
+
+
+	h1 strong{
+		@apply   bg-gradient-to-br  from-custom-accent-primary to-custom-accent-secondary  bg-clip-text ;
+		-webkit-text-fill-color: transparent;
+		/* animation: animated_text 10s ease-in-out infinite;
+		-moz-animation: animated_text 10s ease-in-out infinite;
+		-webkit-animation: animated_text 10s ease-in-out infinite; */
+	}
+
+
+	h1 a::before{
+		@apply  hover-class;
+		content: ''
+	}
+	h1 a:hover::before{
+		@apply  hover-class-active;
+	}
+
+
+	
+
+
+
+	h1 strong::selection {
+		/* @apply   bg-gradient-to-br  from-custom-accent-primary to-custom-accent-secondary  bg-clip-text ; */
+		-webkit-text-fill-color:var(--custom-white);
+	}
+
+
+	h1 {
+		@apply   text-3xl  md:text-6xl md:leading-tight  ;
+	}
+
+	/* 60px -> 24px  */
+	h2 {
+	  @apply     text-4xl md:text-5xl mb-5;
+	}
+  
+	/* 48px -> 20px  */
+	h3 {
+	  @apply  text-xl  md:text-2xl;
+	}
+
+	/* 36px -> 18px  */
+	h4 {
+	  @apply  text-lg  md:text-2xl;
+	}
+
+	/* 30px -> 16px  */
+	h5 {
+		@apply  text-base  md:text-xl;
+	}
+	  
+
+	/* 72px -> 30px  */
+	p{
+		@apply relative text-base leading-relaxed  font-light   text-custom-faded-light ;
+	}
+
+	p a{
+		@apply  link-inside-text;
+	}
+
+
+	p a::before{
+		@apply  hover-class;
+		content: ''
+	}
+	p a:hover::before{
+		@apply  hover-class-active;
+	}
+
+
+	a{
+		@apply text-base  font-light   text-custom-faded-light ;
+	}
+
+	a strong{
+		@apply   font-light   text-custom-accent-primary ;
+	}
+
+	p strong{
+		@apply text-custom-accent-primary ;
+	}
+
+  
+	html {
+	  @apply  h-full;
+	}
+
+
+	#__next {
+		@apply  h-full;
+	}
+
+	.page-container{
+		@apply  h-full;
+	}
+
+
+	body {
+		@apply  text-sm md:text-base h-full bg-custom-primary;
+
+	}
+  
+	.layout {
+	  /* 750px */
+	  /* max-width: 43.75rem; */
+  
+	  /* 1100px */
+	  max-width: 68.75rem;
+	  @apply mx-auto w-11/12;
+	}
+	
+	.layout-container ul{
+		@apply list-disc flex flex-col gap-2;
+	}
+
+	q:before,q:after{
+		font-family: initial;
+		font-size: 1.5em;
+	}
+
+	.icon path{
+		/* fill: inherit !important; */
+		@apply fill-current
+	}
+
+	
+/* 
+	.btn-style-ghost{
+		@apply  group flex flex-wrap gap-1 flex-row items-center justify-center rounded-lg
+	} */
+	
+}
+
+@layer components {
+
+	.form-input{
+		@apply border-none bg-white bg-opacity-10 rounded p-4 overflow-hidden max-h-40
+	}
+
+	.field-group{
+		@apply flex-1 flex  flex-col gap-2
+
+	}
+	.form-helper{
+		@apply text-red-500 text-sm
+	}
+	.form-helper:first-letter{
+		@apply uppercase
+	}
+
+	.btn{
+		@apply flex flex-wrap gap-4 flex-row items-center justify-center rounded-lg cursor-pointer text-base  text-custom-faded-light  font-sans
+	}
+	.btn *{
+		@apply font-light  text-inherit fill-current
+	}
+
+	.btn-default{
+		@apply px-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-transform py-4 bg-custom-secondary  
+	}
+
+	.btn-text{
+		@apply p-2 hover:text-custom-accent-primary
+	}
+
+	.btn-icon{
+		@apply p-2 hover:text-custom-accent-primary hover:-translate-y-1 transition-transform
+	}
+
+	/* ghost */
+	.btn-ghost{
+		@apply py-4 px-6 border rounded border-custom-accent-primary text-custom-accent-primary transition-colors duration-300 hover:text-custom-white  hover:bg-[#fb4eff1a] hover:bg-gradient-to-br  from-custom-accent-primary to-custom-accent-secondary    ;
+	}
+
+	.btn-ghost-filled{
+		@apply py-4 px-6 border rounded border-custom-accent-primary hover:text-custom-primary   transition-colors duration-300 text-custom-white  bg-[#fb4eff1a] bg-gradient-to-br  from-custom-accent-primary to-custom-accent-secondary    ;
+	}
+
+
+	/* ghost */
+	.btn-ghost-small{
+		@apply btn-ghost py-3;
+	}
+
+
+	
+
+	
+}
+

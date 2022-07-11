@@ -1,0 +1,39 @@
+{
+  "id": "colour-palette",
+  "label": "Colour Palette",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "colour": {
+        "type": "Group",
+        "config": {
+          "label": "Colour",
+          "fields": {
+            "name": {
+              "type": "Text",
+              "config": {
+                "label": "Name",
+                "placeholder": ""
+              }
+            },
+            "light": {
+              "type": "Color",
+              "config": {
+                "label": "Light",
+                "placeholder": ""
+              }
+            },
+            "dark": {
+              "type": "Color",
+              "config": {
+                "label": "Dark",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

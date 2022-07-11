@@ -1,0 +1,80 @@
+{
+  "id": "header",
+  "label": "Header",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "navItem": {
+        "type": "Group",
+        "config": {
+          "label": "Nav Item",
+          "fields": {
+            "style": {
+              "type": "Text",
+              "config": {
+                "label": "Style",
+                "placeholder": ""
+              }
+            },
+            "action": {
+              "type": "Text",
+              "config": {
+                "label": "Action",
+                "placeholder": ""
+              }
+            },
+            "content": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Content",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      },
+      "logoContent": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Logo Content",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "logoStyle": {
+        "type": "Text",
+        "config": {
+          "label": "Logo Style",
+          "placeholder": ""
+        }
+      },
+      "logoLink": {
+        "type": "Link",
+        "config": {
+          "label": "Logo Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    }
+  }
+}

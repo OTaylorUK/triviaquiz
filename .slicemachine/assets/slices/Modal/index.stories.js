@@ -1,0 +1,12 @@
+import MyComponent from '../../../../slices/Modal';
+
+export default {
+  title: 'slices/Modal'
+}
+
+
+export const _Default = () => <MyComponent slice={{"variation":"default","name":"Default","slice_type":"modal","items":[],"primary":{"title":[{"type":"paragraph","text":"Labore eiusmod enim deserunt ut enim mollit ullamco ex elit reprehenderit.","spans":[]}],"description":[{"type":"paragraph","text":"Velit ut sunt ad. Officia sint veniam aliqua velit ipsum dolore irure aute culpa excepteur in magna excepteur pariatur laborum.","spans":[]}]},"id":"_Default"}} />
+_Default.storyName = 'Default'
+
+export const _Share = () => <MyComponent slice={{"variation":"share","name":"Share","slice_type":"modal","items":[{"socialName":"optimize front-end solutions","socialContent":[{"type":"paragraph","text":"Reprehenderit consectetur cupidatat et anim amet qui aliquip ut enim commodo. Est deserunt laborum nulla pariatur aliqua minim do occaecat cillum ex pariatur occaecat velit aliqua labore. Dolore sint amet amet ullamco quis elit aliqua excepteur aliqua aliquip mollit incididunt excepteur non.","spans":[]}]},{"socialName":"enhance vertical interfaces","socialContent":[{"type":"paragraph","text":"Nulla aliquip deserunt id dolor voluptate nulla mollit elit. Tempor nisi consequat irure dolore ex sunt dolore elit magna. Veniam enim aliquip fugiat amet laborum.","spans":[]}]},{"socialName":"deploy sticky bandwidth","socialContent":[{"type":"paragraph","text":"Aliqua velit elit mollit magna enim ut adipisicing. Occaecat aliqua labore sit qui aliquip excepteur ipsum deserunt nisi nulla. Culpa nulla irure do mollit eiusmod irure est.","spans":[]}]},{"socialName":"mesh cutting-edge networks","socialContent":[{"type":"paragraph","text":"Cupidatat exercitation occaecat sint nisi veniam adipisicing do aliquip eu laboris eiusmod deserunt reprehenderit ullamco enim. Adipisicing laborum nulla magna minim consequat. Ex in et voluptate sit velit minim quis.","spans":[]}]}],"primary":{"title":[{"type":"heading1","text":"Leverage customized platforms","spans":[]}],"description":[{"type":"paragraph","text":"Amet mollit incididunt mollit exercitation sint culpa ex adipisicing enim velit magna ea. Officia laborum non reprehenderit. Magna aliqua excepteur eu laboris dolor non eiusmod.","spans":[]}],"buttonType":"embrace ubiquitous architectures","buttonContent":[{"type":"paragraph","text":"Labore Lorem commodo cillum reprehenderit do dolore ea ad.","spans":[]}],"buttonStyle":"integrate B2C platforms"},"id":"_Share"}} />
+_Share.storyName = 'Share'

@@ -1,0 +1,81 @@
+{
+  "id": "31bf4e3e-c2d5-4037-a4aa-3b79564c20df",
+  "uid": "distinctio-nihil-perspiciatis",
+  "type": "header",
+  "data": {
+    "logoContent": [
+      {
+        "type": "paragraph",
+        "text": "Dolor deserunt nisi ea proident non proident consequat exercitation culpa.",
+        "spans": []
+      }
+    ],
+    "logoStyle": "matrix synergistic relationships",
+    "logoLink": {
+      "link_type": "Web",
+      "url": "http://twitter.com"
+    },
+    "navItem": [
+      {
+        "style": "generate viral architectures",
+        "action": "target value-added e-tailers",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Ut est et consectetur. Ut do proident aliquip reprehenderit occaecat enim cupidatat commodo nulla exercitation fugiat reprehenderit aute consectetur laborum.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "style": "engage clicks-and-mortar supply-chains",
+        "action": "mesh web-enabled schemas",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Sit esse laboris ullamco eiusmod ex ex.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "style": "drive real-time blockchains",
+        "action": "exploit dot-com mindshare",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Incididunt enim aliqua nulla sint ipsum enim ea tempor magna adipisicing tempor.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      },
+      {
+        "style": "architect vertical paradigms",
+        "action": "engage cutting-edge users",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Proident cillum nostrud consequat cupidatat excepteur nisi cupidatat.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      }
+    ]
+  }
+}

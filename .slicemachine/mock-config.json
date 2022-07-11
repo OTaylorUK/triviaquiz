@@ -1,0 +1,68 @@
+{
+  "_cts": {
+    "quiz": {},
+    "page": {},
+    "header": {
+      "navItem": {},
+      "logoContent": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    },
+    "site-page": {},
+    "footer": {
+      "credit": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
+  },
+  "slices": {
+    "Game": {},
+    "Modal": {
+      "share": {
+        "primary": {}
+      },
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Hero": {
+      "default": {
+        "primary": {
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        },
+        "items": {
+          "buttonContent": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Test": {},
+    "Forms": {
+      "default": {
+        "primary": {}
+      }
+    }
+  }
+}
